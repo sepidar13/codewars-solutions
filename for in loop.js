@@ -24,3 +24,13 @@ function giveMeFive(obj){
  }
 return fiveLengthWords
 }
+
+// not using for in loop
+function giveMeFive(obj){
+    return Object
+    .entries(obj)
+    .join(',')
+    .split(',')
+    .filter(w => w.length === 5) 
+
+}
